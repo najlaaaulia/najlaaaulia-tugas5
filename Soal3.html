@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ubah TextContent dan Warna</title>
+</head>
+<body>
+  <h1 id="judul">Ini adalah judul</h1>
+  <p id="paragraf">Ini adalah paragraf</p>
+
+  <button onclick="ubahElemen()">Ubah Konten dan Warna</button>
+
+  <script>
+    function ubahElemen() {
+      // Mengubah textContent elemen dengan id "judul"
+      var judul = document.getElementById("judul");
+      judul.textContent = "Judul yang diubah";
+
+      // Mengubah warna teks elemen dengan id "judul"
+      judul.style.color = "#F1B4BB";
+
+      // Mengubah latar belakang elemen dengan id "paragraf"
+      var paragraf = document.getElementById("paragraf");
+      paragraf.style.backgroundColor = "#FDF0F0";
+    }
+  </script>
+</body>
+</html>
